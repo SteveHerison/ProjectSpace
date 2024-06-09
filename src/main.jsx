@@ -1,12 +1,15 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App.jsx";
+import ReactDOM from "react-dom";
 import "./index.css";
+import Layout from "./page/layout";
+import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <main>
-      <App />
-    </main>
+    <BrowserRouter>
+      <main className="h-screen w-screen">
+        <Layout />
+      </main>
+    </BrowserRouter>
   </React.StrictMode>
 );
