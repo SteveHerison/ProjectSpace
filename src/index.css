@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.medida {
+  height: calc(100% - 10rem);
+}
